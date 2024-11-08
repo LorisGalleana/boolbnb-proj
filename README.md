@@ -1,36 +1,38 @@
-# boolbnb-proj
+# BOOLBNB
 
-# ba-na-naaaa ♪♪♪
+BoolBnB è una piattaforma web che consente agli utenti di cercare, visualizzare e gestire appartamenti in affitto. I proprietari di appartamenti possono registrarsi, aggiungere le loro proprietà, e sponsorizzarle per aumentarne la visibilità, mentre gli utenti interessati possono esplorare le opzioni disponibili e contattare i proprietari per maggiori informazioni.
 
-# CIAK - 3: Sarà la volta buona?
+## TECNOLOGIE UTILIZZATE
 
-DA FARE AL DOWNLOAD
-composer i
-npm i
-npm i bootstrap
-npm i -D sass
-npm install --save @fortawesome/fontawesome-free
-npm install @popperjs/core
-npm install -g @vue/cli
-php artisan storage:link
+- **Frontend**: Vue.js, Vite, HTML, CSS (con Flexbox)
+- **Backend**: Laravel 10
+- **Database**: MySQL
+- **Geocoding**: TomTom API
+- **Sistema di Pagamento**: Braintree API
 
-1 - aprire nuovo terminale
-2 - cd boolbnb-back
-3 - composer i
-4 - composer update
-5 - npm i
-6 - npm install chart.js
-7 - accendere MAPM !important
-8 - php artisan key:generate
-9 - php artisan migrate
-10 - php artisan db:seed
-11 - php artisan serve
-12 - npm run dev
+## FUNZIONALITÀ PRINCIPALI
 
-1 - aprire nuovo terminale
-2 - cd boolbnb-front
-3 - npm i
+- **Ricerca avanzata**: Gli utenti possono cercare appartamenti per città, indirizzo e vari filtri (stanze, letti, servizi aggiuntivi).
+- **Dettagli appartamenti**: Ogni appartamento ha una pagina dedicata con dettagli completi, inclusi la mappa con la posizione e la possibilità di inviare messaggi al proprietario.
+- **Registrazione e gestione appartamenti**: I proprietari possono registrarsi, aggiungere, modificare e sponsorizzare appartamenti.
+- **Statistiche**: I proprietari possono visualizzare le statistiche delle visualizzazioni e dei messaggi per ogni appartamento.
 
-Se non funziona le chiamate api controllare che la porta sia 8000 e non 8001
-Ricordarsi di aggiornare il file .env, inserendo le credenziali di Braintree (creare un account su https://www.braintreepayments.com/it/sandbox):
-aggiungere le linee di codice riguardanti braintree dall'env.example all'.env
+## REQUISITI TECNICI
+
+- **RT1**: Validazione client-side per tutti gli input.
+- **RT2**: Salvataggio di latitudine e longitudine nel database per ogni appartamento.
+- **RT3**: Sistema di pagamento tramite Braintree per sponsorizzare appartamenti.
+- **RT4**: Sito responsivo per una visualizzazione ottimale su desktop e mobile.
+- **RT5**: Filtraggio della ricerca e aggiornamento dei risultati senza refresh della pagina.
+
+## REQUISITI FUNZIONALI
+
+- **RF1**: Registrazione per i proprietari di appartamenti.
+- **RF2**: Aggiunta di appartamenti alla piattaforma da parte dei proprietari.
+- **RF3**: Ricerca di appartamenti per gli utenti non registrati.
+- **RF4**: Visualizzazione dei dettagli degli appartamenti.
+- **RF5**: Invio di messaggi da parte degli utenti ai proprietari.
+- **RF6**: Visualizzazione dei messaggi ricevuti dai proprietari.
+- **RF7**: Sponsorizzazione degli appartamenti da parte dei proprietari.
+- **RF8**: Statistiche di visualizzazione degli appartamenti.
+
